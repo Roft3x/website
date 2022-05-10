@@ -1,58 +1,99 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <link rel="stylesheet" href="css\style.css">
-    <link rel="stylesheet" href="css\heroallgemein.css">
-    <link rel="stylesheet" href="css\navbar.css">
-    <script src="js\jquery-1.10.2.js"></script>
-    <title>Die Schweiz - Impressum</title>
-    <link rel="icon" type="image/gif/png" href="pictures\schweizflagge.png">
-  </head>
+<head>
+  <link rel="stylesheet" href="css\style.css">
+  <link rel="stylesheet" href="css\heroallgemein.css">
+  <link rel="stylesheet" href="css\navbar.css">
+  <script src="js\jquery-1.10.2.js"></script>
+  <title>Die Schweiz - Impressum</title>
+  <link rel="icon" type="image/gif/png" href="pictures\schweizflagge.png">
+</head>
 
-  <body class="container">
-    <nav>
-      <!-- Navigation bar-->
-      <div id="nav-placeholder"></div>
-      <script>
-          $(function(){
-            $("#nav-placeholder").load("/navbar.html");
-          });
-          </script>
-      <!--end of Navigation bar -->
-    </nav>
+<body class="container">
+  <nav>
+    <div class="navbarwhole">
+      <a href="index.html"><img src="pictures\schweizflagge.png" alt="schweizflagge" class="picnav"></a>
 
-    <main>
-      <div class="hero-nav">
-        <div class="hero-nav__inner">
-          <h1 class="headline1">Impressum</h1>
-          <div class="hero-nav__button">
-            <a href="#" class="btn"></a>
-          </div>
+      <ul class="navbarlist">
+        <li class="navbarlistentry"><a href="allgemeines.html" class="navbarlink">Allgemeines</a></li>
+        <li class="navbarlistentry"><a href="geschichte.html" class="navbarlink">Geschichte</a></li>
+        <li class="navbarlistentry"><a href="kultur.html" class="navbarlink">Kultur</a></li>
+        <li class="navbarlistentry"><a href="sehenswürdigkeiten.html" class="navbarlink">Sehenswürdigkeiten</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="hero-nav">
+      <div class="hero-nav__inner">
+        <h1 class="headline1">Impressum</h1>
+        <div class="hero-nav__button">
+          <a href="#" class="btn"></a>
         </div>
       </div>
-      <div class="page-content">
-        <h2 class="headline2">Impressum</h2>
-        <ul id="listimpressum">
-          <li>Barbs Stock</li>
-          <li>Gehtsiegarnixanstraße 69</li>
-          <li>187187</li>
-          <li>babsibabs@gmail.com</li>
-        </ul>
+    </div>
+    <div class="page-content">
+      <h2 class="headline2">Impressum</h2>
+      <ul id="listimpressum">
+        <li>Barbs Stock</li>
+        <li>Gehtsiegarnixanstraße 69</li>
+        <li>187187</li>
+        <li>babsibabs@gmail.com</li>
+      </ul>
 
-      </div>
-      <script src="js\hero.js"></script>
-    </main>
+    </div>
+    <script src="js\hero.js"></script>
+  </main>
 
-    <footer>
-      <!-- Footer bar-->
-      <div id="footer-placeholder"></div>
-      <script>
-        $(function(){
-          $("#footer-placeholder").load("/footer.html");
-        });
-        </script>
-      <!--end of Footer -->
-    </footer>
-  </body>
+  <footer>
+    <ul id="wholefooter">
+      <li>
+        <div id="footeraboutus">
+          <h6>Über uns</h6>
+          <hr id="hrfooteraboutus">
+          <p id="pfooteraboutus">Das Ziel unserer Website ist es verwirrte
+            Menschen noch verwirrter zu machen...</p>
+        </div>
+      </li>
+      <li>
+        <div id="footerquicklink">
+          <ul class="footerlist">
+            <li>
+              <h6>Quick Links</h3>
+            </li>
+            <hr id="hrfooteraboutus">
+            <li class="footerlistentry"> <a href="allgemeines.html" class="footerlistlink"> Allgemeines</a></li>
+            <li class="footerlistentry"> <a href="geschichte.html" class="footerlistlink"> Geschichte</a></li>
+            <li class="footerlistentry"> <a href="kultur.html" class="footerlistlink"> Kultur</a></li>
+            <li class="footerlistentry"> <a href="sehenswürdigkeiten.html" class="footerlistlink">
+                Sehenswürdigkeiten</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div id="footerimportantlink">
+          <ul class="footerlist">
+            <li>
+              <h6>Important Links</h6>
+            </li>
+            <hr id="hrfooteraboutus">
+            <li class="footerlistentry"> <a href="impressum.html" class="footerlistlink">Impressum</a></li>
+            <li class="footerlistentry"> <a href="datenschutz.html" class="footerlistlink">Datenschutz</a></li>
+            <li class="footerlistentry"> <a href="agb.html" class="footerlistlink">AGB</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div id=footerinfoschueler>
+          <p id=pfooterinfoschueler>Verena Becker</p>
+          <p id=pfooterinfoschueler>Leopold Hinz</p>
+          <p id=pfooterinfoschueler>Letzte Änderung: 13.12.2021 09:20 Uhr</p>
+          <p id=pfooterinfoschueler> <a href="login.html">Login</a></p>
+        </div>
+      </li>
+    </ul>
+  </footer>
+</body>
+
 </html>
