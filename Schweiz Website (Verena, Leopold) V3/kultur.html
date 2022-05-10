@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css\herokultur.css">
+    <link rel="stylesheet" href="css\navbar.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>Die Schweiz - Kultur</title>
+    <link rel="icon" type="image/gif/png" href="pictures\schweizflagge.png">
+  </head>
+  <body class="container">
+    <nav>
+      <!-- Navigation bar-->
+      <div id="nav-placeholder"></div>
+      <script>
+        $(function(){
+          $("#nav-placeholder").load("/navbar.html");
+        });
+        </script>
+      <!--end of Navigation bar -->
+    </nav>
+
+    <main>
+      <div class="hero-nav">
+        <div class="hero-nav__inner">
+          <h1 class="headline1">Kultur</h1>
+          <div class="hero-nav__button">
+            <a href="#" class="btn"></a>
+          </div>
+        </div>
+      </div>
+      <div class="page-content">
+        <p>
+          Die Schweiz ist besonders bekannt für ihre Kultur, die Käse,
+          Schokolade, Uhren, Taschenmesser, die kalvinistische Arbeitsethik und
+          retoromanische Kultur sowie Kunst, Wissenschaft, Architektur,
+          Zuckerbäcker, Ingenieure und Hoteliere beinhaltet.
+        </p>
+        <p>
+          Dadurch, dass die Schweiz an so viele Länder angrenzt, hat sie viel
+          von ihnen übernommen und hat eine multikulturelle Gesellschaft
+        </p>
+      </div>
+      <div class="page-content">
+        <img
+          src="https://www.action.com/globalassets/cmsarticleimages/18/63/2577812_7622210747679-111_02.png/"
+          alt="" width="500px" height="auto">
+      </div>
+      <div class="page-content">
+        <h2 class="headline2">Spezialitäten</h2>
+        <p>Besonders vielfältig und ansprechend sind die Spezialitäten der
+          Schweiz zum Beispiel:</p>
+        <ul id="spezialitätenlist">
+          <li>Schokolade</li>
+          <li>Käse</li>
+          <li>Käsefundue</li>
+          <li>Raclette</li>
+          <li>Rösti</li>
+          <li>Äplermagronen</li>
+        </ul>
+        <img src="pictures\schweizer-spezialitaet-fondue.webp" alt=""
+          width="700px" height="auto">
+      </div>
+      <script src="js\hero.js"></script>
+    </main>
+
+    <footer>
+      <!-- Footer bar-->
+      <div id="footer-placeholder"></div>
+      <script>
+        $(function(){
+          $("#footer-placeholder").load("/footer.html");
+        });
+        </script>
+      <!--end of Footer -->
+    </footer>
+  </body>
+</html>

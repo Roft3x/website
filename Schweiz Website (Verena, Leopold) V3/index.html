@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css\heroallgemein.css">
+    <link rel="stylesheet" href="css\navbar.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>Die Schweiz - Willkommen</title>
+    <link rel="icon" type="image/gif/png" href="pictures\schweizflagge.png">
+  </head>
+
+  <body class="container">
+    <nav>
+      <!-- Navigation bar-->
+      <div id="nav-placeholder"></div>
+      <script>
+        $(function(){
+          $("#nav-placeholder").load("/navbar.html");
+        });
+        </script>
+      <!--end of Navigation bar -->
+    </nav>
+
+    <main>
+      <div class="hero-nav">
+        <div class="hero-nav__inner">
+          <h1 class="headline1">Grüezi!</h1>
+          <div class="hero-nav__button">
+            <a href="#" class="btn"></a>
+          </div>
+        </div>
+      </div>
+      <div class="page-content">
+        <!-- <h2 class="headline2">Wo liegt die Schweiz?</h2> -->
+        <p>Das Ziel unserer Website ist es verwirrte Menschen noch verwirrter zu machen...</p>
+        <p>Die Menschen sollten ihre Lebensentscheidungen überdenken und neue Länder besuchen. Dafür bieten wir ihnen einen kurzen aber übersichtlichen Einblick auf ein Land. In dem Fall die Schweiz.</p>
+      </div>
+      <div class="page-content">
+        <img src="pictures\pexels-rodnae-productions-7414110.jpg" id="picfounder" alt="founder" >
+        <h2 class="headline2"> Über uns</h2>
+        <p>Der Grund für diese Seite war, dass ich mich vom einen auf den anderen Tag dazu entschloss mein Leben und die Welt zu hinterfragen, genau wie Immanuel Kant.</p>
+        <p>Ich fing eine lange Reise an und entdeckte viele unheimliche und schreckliche Kulturen, wobei mir die schweizerische am wenigsten missfiel. Damit nicht alle solche Fehler begehen wie ich, zeige ich ihnen ein paar Vorschläge. In der Hoffnung, dass Sie nicht ausgeraubt und abgezogt werden.</p>
+      </div>
+      <div class="page-content">
+        <h2 class="headline2">Gründungsmitglieder</h2>
+        <div id="founder">
+          <ul id="listfounder">
+            <li>
+              <img src="pictures\pexels-katerina-holmes-5905902.jpg" class="picrealfounder" alt="" width="300px">
+              <p id="barbs">Barbs Stock</p>
+            </li>
+            <li>
+              <img src="pictures\pexels-andrea-piacquadio-3931561.jpg" class="picrealfounder" alt="" width="350px">
+              <p id="reuben">Reuben Deuben</p>
+            </li>
+          </ul>
+        </div>
+          
+      </div>
+      <script src="js\hero.js"></script>
+    </main>
+    <footer>
+      <!-- Footer bar-->
+      <div id="footer-placeholder"></div>
+      <script>
+        $(function(){
+          $("#footer-placeholder").load("/footer.html");
+        });
+        </script>
+      <!--end of Footer -->
+    </footer>
+  </body>
+</html>

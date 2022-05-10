@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  cursor: auto;
+  font-size: 20px;
+}
+
+.headline1 {
+  text-align: center;
+  color: white;
+  transform: translateY(50);
+  font-size: 70px;
+  font-weight: 300;
+  margin: auto;
+}
+
+.headline2 {
+  text-align: center;
+  color: black;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.page-content {
+  width: 50em;
+  margin-top: 30px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  line-height: 1.625;
+  background-color: rgb(248, 248, 248);
+  border-radius: 4px;
+  padding-left: 20px;
+}
+#picfounder{
+  margin: 10px;
+  width: 600px;
+  height: auto;
+}
+#listfounder{
+  margin: auto;
+  display: inline-flex;
+  list-style-type: none;
+}
+.picrealfounder{
+  margin: 20px;
+  margin-bottom: 0px;
+}
+#reuben{
+  transform: translateX(100px);
+}
+#barbs{
+  transform: translateX(80px);
+}
+
+#listimpressum{
+  list-style-type: none;
+}
+
+#maps {
+  margin: 20px;
+}
+
+#budgetchart {
+  margin: 20px;
+}
+
+#table1 {
+  margin: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+/* footer */
+#wholefooter{
+  list-style-type: none;
+  display: inline-flex;
+  margin: 0px;
+}
+
+h6 {
+  color: white;
+  font-weight: 400;
+  font-size: 17px;
+  margin: 10px;
+}
+#linkaboutus{
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+#footeraboutus{
+  width: 22em;
+  font-size: 20px;
+  text-align: left;
+  margin: 10px;
+}
+#pfooteraboutus{
+  font-weight: 300;
+  font-size: 15px;
+  margin: 10px;
+}
+#hrfooteraboutus{
+  width: 80px;
+  margin: 0px;
+  margin-left: 10px;
+}
+
+#footerquicklink{
+  padding: 0px;
+  margin: 10px;
+  width: 7em;
+  text-align: left;
+}
+#footerimportantlink{
+  padding: 0px;
+  margin: 10px;
+  width: 7em;
+  text-align: left;
+}
+#footerinfoschueler{
+  width: 22em;
+  font-size: 20px;
+  text-align: left;
+  margin: 10px;
+}
+#pfooterinfoschueler{
+  font-weight: 300;
+  font-size: 15px;
+  margin: 10px;
+}
+
+.footerlist {
+  color: white;
+  list-style-type: none;
+  width: 20em;
+  padding: 0px;
+}
+
+.footerlistentry {
+  color: white;
+  font-weight: 300;
+  font-size: 15px;
+  padding: 3px 10px;
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+.footerlistlink{
+  text-decoration: none;
+  color: white;
+  transition: all 100ms linear;
+}
+
+.footerlistlink:hover{
+color: #0087ca;
+text-decoration: underline;
+}
+
+/* footer end */
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+
+  }
+}
+
+nav {
+  height: 70px;
+  grid-column: span 3;
+  padding: 0px;
+  text-align: center;
+  font-size: 1.4em;
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  min-height: 1000px;
+}
+
+footer {
+  grid-column: span 3;
+  padding: 30px;
+  font-size: 1.4em;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 1em;
+  font-size: 1.3em;
+  font-weight: bold;
+}

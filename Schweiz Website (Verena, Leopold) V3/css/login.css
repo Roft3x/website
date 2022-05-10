@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext');
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    cursor: auto;
+    font-size: 20px;
+  }
+
+#headlinelogin{
+    text-align: center;
+    color: black;
+    transform: translateY(50);
+    font-size: 70px;
+    font-weight: 300;
+    margin: auto;
+}
+
+.wrapper {	
+	margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.form-signin {
+    background: rgb(246, 246, 246) !important;	
+    max-width: 380px;
+    padding: 15px 35px 45px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,0.1);
+}  
+
+.form-signin-heading{
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}	
+.form-control {
+
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type="text"] {
+    margin-bottom: -1px;
+
+}
+input[type="password"] {
+    margin-bottom: 20px;
+
+}
+.buttonlogin{
+    border-radius: 0px;
+    background-color: #0087ca;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    transition: all 100ms linear;
+}
+.buttonlogin:hover{
+    background-color: #006fa7;
+}
+#errorField{
+    color: red;
+    font-weight: 300;
+    font-size: 15px;
+    margin-top: 10px;
+    visibility: hidden;
+}
+
+
+
+

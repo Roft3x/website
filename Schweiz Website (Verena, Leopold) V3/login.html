@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css\style.css">
+        <link rel="stylesheet" href="css\heroallgemein.css">
+        <link rel="stylesheet" href="css\login.css">
+        <link rel="stylesheet" href="css\navbar.css">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <title>Login</title>
+        <link rel="icon" type="image/gif/png" href="pictures\schweizflagge.png">
+    </head>
+    <body class="container">
+        <nav>
+            <!-- Navigation bar-->
+            <div id="nav-placeholder"></div>
+            <script>
+              $(function(){
+                $("#nav-placeholder").load("/navbar.html");
+              });
+              </script>
+            <!--end of Navigation bar -->
+        </nav>
+
+        <main>
+            <div id="divlogin">
+                <div class="wrapper">
+                    <form class="form-signin">
+                        <h2 class="form-signin-heading">Bitte melden Sie sich an</h2>
+                        <input id="username" type="username" class="form-control" name="username" placeholder="Benutzername" required="" />
+                        <input id="password" type="password" class="form-control" name="password" placeholder="Passwort" required="" />
+                        <button class="buttonlogin">Login</button>
+                        <p id="errorField">Benutzername/Passwort falsch</p>
+                        <script src="js\login.js"></script>
+                    </form>
+                </div>
+            </div>
+            <script src="js\hero.js"></script>
+        </main>
+        <footer>
+            <!-- Footer bar-->
+            <div id="footer-placeholder"></div>
+            <script>
+              $(function(){
+                $("#footer-placeholder").load("/footer.html");
+              });
+              </script>
+            <!--end of Footer -->
+        </footer>
+
+    </body>
+</html>

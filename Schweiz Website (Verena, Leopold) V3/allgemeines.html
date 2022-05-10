@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css\heroallgemein.css">
+    <link rel="stylesheet" href="css\navbar.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>Die Schweiz - Allgemeines</title>
+    <link rel="icon" type="image/gif/png" href="pictures\schweizflagge.png">
+  </head>
+  <body class="container">
+    <nav>
+      <!-- Navigation bar-->
+      <div id="nav-placeholder"></div>
+      <script>
+        $(function(){
+          $("#nav-placeholder").load("/navbar.html");
+        });
+        </script>
+      <!--end of Navigation bar -->
+    </nav>
+
+    <main>
+      <div class="hero-nav">
+        <div class="hero-nav__inner">
+          <h1 class="headline1">Allgemeines</h1>
+          <div class="hero-nav__button">
+            <a href="#" class="btn"></a>
+          </div>
+        </div>
+      </div>
+      <div class="page-content">
+        <p>
+          Die Schweiz liegt im Zentrum von Europa an den Grenzen zu Deutschland,
+          Frankreich, Italien, Lichtenstein und Österreich.
+          Am besten kommt man dorthin mit dem Zug oder Bus. Man kann aber auch
+          fliegen, was aber viel teuerer und umweltschädlicher ist.
+        </p>
+        <p>
+          Es leben ca. 8,6 Mio Menschen in der Schweiz. Diese umfasst 41.285
+          km². Das enspricht 1/8 von Deutschland.
+          Die Hauptstadt ist Bern und die bekanntesten Städte sind Genf, Zürich
+          und Luzern. Die Schweiz hat 2172 Gemeinden, Städte und Dörfer.
+          Die Amtsprache ist Deutsch, Französisch, Italienisch und
+          Rätoromanisch.
+        </p>
+        <iframe id="maps"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797221.2300920845!2d5.981405624908434!3d46.79127685704961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c64ef6f596d61%3A0x5c56b5110fcb7b15!2sSchweiz!5e0!3m2!1sde!2sde!4v1639252583208!5m2!1sde!2sde"
+          width="600" height="450" style="border:0;" allowfullscreen=""
+          loading="lazy"></iframe>
+      </div>
+      <div class="page-content">
+        <p>
+          Der Durchschnittspreis für eine Woche Aufenthalt für zwei Personen
+          würde ca. 2400€ kosten.
+        </p>
+        <img src="pictures\BudgetChart.png" alt="BudgetChart" id="budgetchart">
+        <p><a
+            href="https://www.wohin-und-wann.de/budget/schweiz-confoederatio-helvetica/?duree=7&mois=0&nb_personnes=2&hebergement=defaut&budget=2&ville_from=&nocache=1"
+            target="_blank">Quelle </a></p>
+      </div>
+      <script src="js\hero.js"></script>
+    </main>
+
+    <footer>
+      <!-- Footer bar-->
+      <div id="footer-placeholder"></div>
+      <script>
+        $(function(){
+          $("#footer-placeholder").load("/footer.html");
+        });
+        </script>
+      <!--end of Footer -->
+    </footer>
+  </body>
+</html>
